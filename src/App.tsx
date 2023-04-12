@@ -1,11 +1,15 @@
-import Teste from './Teste'
+import Sidebar from './containers/Sidebar'
 import GlobalStyle from './styles'
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Teste />
+      <Sidebar />
+      <main>
+        <section>oi</section>
+        <section>oi</section>
+      </main>
     </div>
   )
 }
