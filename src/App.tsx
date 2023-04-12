@@ -1,15 +1,19 @@
 import Sidebar from './containers/Sidebar'
-import GlobalStyle from './styles'
+import About from './containers/About'
+import Projects from './containers/Projects'
+import GlobalStyle, { Container } from './styles'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <GlobalStyle />
-      <Sidebar />
-      <main>
-        <section>oi</section>
-        <section>oi</section>
-      </main>
+      <Container>
+        <Sidebar />
+        <main>
+          <About />
+          <Projects />
+        </main>
+      </Container>
     </div>
   )
 }

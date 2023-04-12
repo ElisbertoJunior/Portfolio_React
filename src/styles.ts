@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -9,3 +9,15 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export default GlobalStyle
+
+export const Container = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 128px auto;
+
+  img {
+    max-width: 100%;
+  }
+`
